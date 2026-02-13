@@ -84,19 +84,19 @@ function drawText() {
     context.textAlign = "center";
     
     // glow effect
-    context.shadowColor = "rgba(45, 45, 255, 1)";
+    context.shadowColor = "rgba(255, 218, 3, 1)";
     context.shadowBlur = 8;
     context.shadowOffsetX = 0;
     context.shadowOffsetY = 0;
 
     if(frameNumber < 250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 218, 3, ${opacity})`;
         context.fillText("Sometimes I wonder how I got so lucky", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     //fades out the text by decreasing the opacity
     if(frameNumber >= 250 && frameNumber < 500){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 218, 3, ${opacity})`;
         context.fillText("Sometimes I wonder how I got so lucky", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
@@ -106,7 +106,7 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 500 && frameNumber < 750){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 218, 3, ${opacity})`;
 
         if (window.innerWidth < 600) {           //shortens long sentence for mobile screens
             drawTextWithLineBreaks(["As someone who never understood relationships nor liked them"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -117,7 +117,7 @@ function drawText() {
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 750 && frameNumber < 1000){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 218, 3, ${opacity})`;
         
         if (window.innerWidth < 600) {
             drawTextWithLineBreaks(["As someone who never understood relationships nor liked them"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -132,12 +132,12 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 1000 && frameNumber < 1250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 218, 3, ${opacity})`;
         context.fillText("To be in love with you and care about you so much", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1250 && frameNumber < 1500){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 218, 3, ${opacity})`;
         context.fillText("To be in love with you and care about you so much", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
@@ -146,12 +146,12 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 1500 && frameNumber < 1750){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 218, 3, ${opacity})`;
         context.fillText("I never thought it could be possible for me", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1750 && frameNumber < 2000){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 218, 3, ${opacity})`;
         context.fillText("I never thought it could be possible for me", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
@@ -160,7 +160,7 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 2000 && frameNumber < 2250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 218, 3, ${opacity})`;
 
         if (window.innerWidth < 600) {
             drawTextWithLineBreaks(["and yet here I am", "Madly in love with you"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -171,7 +171,7 @@ function drawText() {
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 2250 && frameNumber < 2500){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 218, 3, ${opacity})`;
 
         if (window.innerWidth < 600) {
             drawTextWithLineBreaks(["and yet here I am", "Madly in love with you"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -186,7 +186,7 @@ function drawText() {
         opacity = 0;
     }
     if(frameNumber > 2500 && frameNumber < 99999){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(255, 218, 3, ${opacity})`;
 
         if (window.innerWidth < 600) {
             drawTextWithLineBreaks(["I love you so much Chad, more than", "anything in God's universe"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
@@ -198,7 +198,7 @@ function drawText() {
     }
     
     if(frameNumber >= 2750 && frameNumber < 99999){
-        context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
+        context.fillStyle = `rgba(255, 218, 3, ${secondOpacity})`;
 
 
         if (window.innerWidth < 600) {
@@ -211,7 +211,7 @@ function drawText() {
     }
 
     if(frameNumber >= 3000 && frameNumber < 99999){
-        context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
+        context.fillStyle = `rgba(255, 218, 3, ${thirdOpacity})`;
         context.fillText("Happy Valentine's Day Pumpkin hehe <3", canvas.width/2, (canvas.height/2 + 120));
         thirdOpacity = thirdOpacity + 0.01;
 
